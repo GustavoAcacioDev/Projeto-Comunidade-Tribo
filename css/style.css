@@ -286,7 +286,7 @@ select, .select{
 }
 
 .imagens {
-    width: 107px;
+    width: 15%;
     height: 70px;
     background-color: white;
 }
@@ -344,5 +344,47 @@ h2.ocultar {
 }
 
 
+/* Media Query Responsividade 800px */
+ @media(min-width: 801px){
+    .listas .padding-left {
+        padding-left: 65px;
+    }
 
- 
+    .listas .imagens {
+        margin-left: 150px;
+        margin-top: -30px;
+    }
+
+    .copyright {
+        text-align: center;
+    }
+}
+/* Media Query Responsividade 1100px */
+@media(min-width: 1200px){
+    footer .container h3{
+        font-size: 1.7em;
+    }
+    
+    .listas a{
+        font-size: 1.6em;
+    }
+
+    .listas .imagens{
+        display: flex;
+    }
+
+    .listas .imagens img{
+        width: 100%;
+    }
+
+    .icones{
+        width: 100px;
+        padding-left: 1 em;
+        height: 40px;
+    }
+
+    .icones img{
+        width: 100%;
+        height: 100%;
+    }
+}
