@@ -1,5 +1,4 @@
-*{
-    padding: 0;
+* {
     margin: 0;
 }
 
@@ -21,6 +20,14 @@ body{
 a{
     text-decoration: none;
     color: white;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: rgb(255,255,255);
+    background: linear-gradient(rgba(255,255,255,1) 0%, rgba(159,159,159,1) 27%, rgba(191,191,191,1) 78%, rgba(0,0,0,1) 100%);
+    background-repeat: no-repeat;
 }
 
 .container {
@@ -134,3 +141,208 @@ select, .select{
 }
 
 
+
+
+
+
+
+
+.titulo {
+    background-color: black;
+    color: white;
+}
+
+.titulo span {
+    font-weight: 700;
+}
+
+.titulo h1 {
+    font-weight: 400;
+    margin-bottom: 2%;
+}
+
+.titulo div {
+    padding: 6%;
+}
+
+
+
+
+.filmes {
+    display: flex;
+    background-color: white;
+    margin-bottom: 10px;
+}
+
+.destaques h2 {
+    color: #767676;
+    font-weight: 300;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.filmes img {
+    width: 110px;
+    height: 120px;
+    border: solid 3px #9F9F9F;
+}
+
+.filmes h1 {
+    font-size: 31px;
+    color: #767676;
+}
+
+.filmes p {
+    color: #9F9F9F;
+}
+
+.filmes p span {
+    color: #141414;
+    font-weight: 600;
+}
+
+.filmes div {
+    padding: 5px;
+}
+
+
+
+
+
+
+
+.gray {
+    background-color: #757575;
+    color: black;
+    padding: 3%;
+    text-align: center;
+    height: 120px;
+    margin-top: 5%;
+    width: 400px;
+}
+
+.gray h1 {
+    font-weight: 900;
+}
+
+.gray img {
+    width: 50px;
+    margin: auto;
+    margin-top: 2%;
+}
+
+
+
+
+
+
+.listas {
+    display: flex;
+}
+
+.listas li {
+    list-style-type: none;
+    margin-right: 15px;
+}
+
+.listas a {
+    text-decoration: none;
+    color: white;
+    font-size: 10pt;
+    font-weight: 200;
+}
+
+.h3 h3 {
+    color: white;
+    font-weight: 200;
+    margin-bottom: 2%;
+    margin-top: 10%;
+}
+
+.h3 p {
+    margin-top: 10%;
+    color: white;
+}
+
+.rodape {
+    background: rgb(29,29,29);
+    background: linear-gradient(rgba(29,29,29,1) 0%, rgba(0,0,0,1) 100%);
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+.padding {
+    padding: 0px 20px 5px 20px;
+}
+
+
+
+
+
+
+
+.imagens img {
+    width: 107px;
+}
+
+.imagens {
+    width: 107px;
+    height: 70px;
+    background-color: white;
+}
+
+.icones {
+    display: flex;
+    align-items: center;
+}
+
+.icones .tt { 
+    width: 40px;
+    height: 40px;
+}
+
+.icones .insta {
+    width: 45px;
+    height: 45px;
+}
+
+.icones .face {
+    width: 50px;
+    height: 50px;
+}
+
+
+
+
+
+
+
+.banner {
+    display: none;
+}
+
+.filmes .h1none h1 {
+    display: none;
+}
+
+.veja-mais {
+    display: none;
+}
+
+.selecione .gray2 {
+    display: none;
+}
+
+.selecione-tablet {
+    display: none;
+}
+span.ocultar {
+    display: none;
+}
+h2.ocultar {
+    display: none;
+}
+
+
+
+ 

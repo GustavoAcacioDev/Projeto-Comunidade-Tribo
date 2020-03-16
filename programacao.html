@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Programação </title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container cabecalho">
+            <img src="imagens/logo.png" alt="Logo do CineAccess" class="logo">
+            <div class="menu-icons">
+                <img src="imagens/play.svg" alt="">
+                <img src="imagens/menu.svg" alt="" onclick="menu()" class="bar">
+            </div>
+            <div id="menu">
+                <ul>
+                    <li><a href="#"><span>-</span> Home</a></li>
+                    <li><a href="#"><span>-</span> Acessibilidade</a></li>
+                    <li><a href="#"><span>-</span> Programação</a></li>
+                    <li><a href="#"><span>-</span> Localização</a></li>
+                </ul>
+                <ul class="white">
+                    <li><a href="#">Entre</a></li>
+                    <li><a href="#">Cadastre-se</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main id="main">
+        <div class="container titulo">
+            <div>
+                <h1>Programação</h1>
+                <p>Os melhores filmes com <span class="ocultar"><br></span><span>audiodescrição</span> e <span>Closed Caption</span></p>
+            </div>
+        </div>
+        <h2 class="ocultar">Destaques em cartaz</h2>
+        <section class="container destaques">
+            <h2>Destaques em cartaz</h2>
+            <article class="filmes">
+                <img src="imagens/sonic.jpg" alt="Banner de Sonic, o filme.">
+                <div class="h1none">
+                    <h1>Sonic O Filme</h1>
+                </div>
+                <div>
+                    <h1>Sonic O Filme</h1>
+                    <p>12 : 30 | 1 : 30 | 3 : 30 | 5 : 25</p>
+                    <p>Classificação : 12</p>
+                    <p><span>Audiodescrição | ClosedCaption</span></p>
+                </div>
+            </article>
+            <article class="filmes">
+                <img src="imagens/sonic.jpg" alt="Banner de Sonic, o filme.">
+                <div class="h1none">
+                    <h1>Sonic O Filme</h1>
+                </div>
+                <div>
+                    <h1>Sonic O Filme</h1>
+                    <p>12 : 30 | 1 : 30 | 3 : 30 | 5 : 25</p>
+                    <p>Classificação : 12</p>
+                    <p><span>Audiodescrição | ClosedCaption</span></p>
+                </div>
+            </article>
+            <article class="filmes">
+                <img src="imagens/sonic.jpg" alt="Banner de Sonic, o filme.">
+                <div class="h1none">
+                    <h1>Sonic O Filme</h1>
+                </div>
+                <div>
+                    <h1>Sonic O Filme</h1>
+                    <p>12 : 30 | 1 : 30 | 3 : 30 | 5 : 25</p>
+                    <p>Classificação : 12</p>
+                    <p><span>Audiodescrição</span></p>
+                </div>
+            </article>
+            <article class="filmes">
+                <img src="imagens/sonic.jpg" alt="Banner de Sonic, o filme.">
+                <div class="h1none">
+                    <h1>Sonic O Filme</h1>
+                </div>
+                <div>
+                    <h1>Sonic O Filme</h1>
+                    <p>12 : 30 | 1 : 30 | 3 : 30 | 5 : 25</p>
+                    <p>Classificação : 12</p>
+                    <p><span>Audiodescrição | ClosedCaption</span></p>
+                </div>
+            </article>
+            <article class="filmes">
+                <img src="imagens/sonic.jpg" alt="Banner de Sonic, o filme.">
+                <div class="h1none">
+                    <h1>Sonic O Filme</h1>
+                </div>
+                <div>
+                    <h1>Sonic O Filme</h1>
+                    <p>12 : 30 | 1 : 30 | 3 : 30 | 5 : 25</p>
+                    <p>Classificação : 12</p>
+                    <p><span>Audiodescrição | ClosedCaption</span></p>
+                </div>
+            </article>
+
+        </section>
+        <section class="selecione">
+            <div class="container titulo gray">
+                <h1>Selecione o seu cinema</h1>
+                <p>Encontre a unidade mais próxima de você</p>
+                <img src="imagens/down-arrow.svg" alt="Seta para baixo.">
+            </div>
+        </section>
+        <section class="selecione-tablet container titulo gray">
+            <h1>Selecione o seu cinema</h1>
+            <form action="">
+                <label for="i-se1">Selecione sua cidade 
+                    <select name="n-se1" id="i-se1">
+                        <option value="SP">São Paulo</option>
+                    </select>
+                </label><br><br>
+                <label for="i-se2">Selecione sua cidade 
+                    <select name="n-se2" id="i-se2">
+                        <option value="SP">São Paulo</option>
+                    </select>
+                </label><br>
+            </form>
+            <a href="#">Use sua localização</a>
+            <h2>Unidades perto de você</h2>
+            <div class="unidades">
+                <article class="analia">
+                    <p>Shopping Anália Franco</p>
+                    <img src="imagens/down-arrow.svg" alt="">
+                </article>  
+                <article class="analia">
+                    <p>Shopping Anália Franco</p>
+                    <img src="imagens/down-arrow.svg" alt="">
+                </article>  
+                <article class="analia">
+                    <p>Shopping Anália Franco</p>
+                    <img src="imagens/down-arrow.svg" alt="">
+                </article>  
+            </div>
+                <h2 class="preto">Veja outros</h2>
+        </section>
+    </main>
+    <footer class="h3 rodape">
+        <div class="container padding">
+            <h3>Página Home</h3>
+            <div class="listas">
+                <ul>
+                    <li><a href="#">. Acessibilidade</a></li>
+                    <li><a href="#">. Home</a></li>
+                    <li><a href="index.html">. Programação</a></li>
+                    <li><a href="#">. Localização</a></li>
+                </ul>
+                <ul class="padding-left">
+                    <li><a href="#">. Sobre</a></li>
+                    <li><a href="#">. Central de Atendimento</a></li>
+                </ul>
+                <div class="imagens">
+                    <img src="imagens/logo.png" alt="Logo do CineAcess.">
+                    <div class="icones">
+                        <img src="imagens/instagram.png" alt="Logo do Instagram." class="insta">
+                        <img src="imagens/facebook.png" alt="Logo do Facebook." class="face">
+                        <img src="imagens/twitter.png" alt="Logo do Twitter." class="tt">
+                    </div>
+                </div>
+            </div>
+            <p class="copyright">©COPYRIGHT - 2020</p>
+        </div>
+    </footer>
+    <script>
+        function menu(){
+            m = document.getElementById("menu");
+            ma = document.getElementById("main")
+            if(m.style.display == "none"){
+                m.style.display = "block";
+                ma.style.opacity = "0.2";
+            }else{
+                ma.style.opacity = "1"
+                m.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
