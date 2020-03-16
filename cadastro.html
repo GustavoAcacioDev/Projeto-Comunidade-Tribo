@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container cabecalho">
+            <img src="img/logo.png" alt="Logo do CineAccess" class="logo">
+            <div class="menu-icons">
+                <img src="img/play.svg" alt="">
+                <img src="img/menu.svg" alt="" onclick="menu()" class="bar">
+            </div>
+            <div id="menu">
+                <ul>
+                    <li><a href="#"><span>-</span> Home</a></li>
+                    <li><a href="#"><span>-</span> Acessibilidade</a></li>
+                    <li><a href="#"><span>-</span> Programação</a></li>
+                    <li><a href="#"><span>-</span> Localização</a></li>
+                </ul>
+                <ul class="white">
+                    <li><a href="#">Entre</a></li>
+                    <li><a href="#">Cadastre-se</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>Cadastro</h1>
+        </div>
+
+            <form action="" method="get" class="cadastro">
+                <div class="campo">
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome da pessoa" id="nome">
+                </div>
+
+                <div class="campo">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="campo">
+                    <label for="deficiencia">Deficiência</label>
+                    <select name="deficiencia" id="deficiencia">
+                        <option value="blind">Cegueira</option>
+                        <option value="Surdo">Surdez</option>
+                    </select>
+                </div>
+                <div class="campo">
+                    <label for="data">Data de Nascimento</label>
+                    <input type="date" name="data" id="data" min="1900-01-01" max="2020-03-05">
+                </div>  
+                <div class="campo">
+                    <label for="adress">Endereço</label>
+                    <input class="select" type="adress" name="adress" id="adress">
+                </div>  
+                <div class="campo">
+                    <label for="senha">Senha</label>
+                    <input type="password" name="senha" id="senha">
+                </div>
+                <div class="campo">
+                    <label for="confirma_senha">Confirme a Senha</label>
+                    <input type="password" name="confirma_senha" id="confirma_senha">
+                </div>
+    </main>
+    <footer class="h3 rodape">
+        <div class="container padding">
+            <h3>Página Home</h3>
+            <div class="listas">
+                <ul>
+                    <li><a href="#">. Acessibilidade</a></li>
+                    <li><a href="#">. Home</a></li>
+                    <li><a href="index.html">. Programação</a></li>
+                    <li><a href="#">. Localização</a></li>
+                </ul>
+                <ul class="padding-left">
+                    <li><a href="#">. Sobre</a></li>
+                    <li><a href="#">. Central de Atendimento</a></li>
+                </ul>
+                <div class="imagens">
+                    <img src="img/logo.png" alt="Logo do CineAcess.">
+                    <div class="icones">
+                        <img src="img/instagram.png" alt="Logo do Instagram." class="insta">
+                        <img src="img/facebook.png" alt="Logo do Facebook." class="face">
+                        <img src="img/twitter.png" alt="Logo do Twitter." class="tt">
+                    </div>
+                </div>
+            </div>
+            <p class="copyright">©COPYRIGHT - 2020</p>
+        </div>
+    </footer>
+    <script>
+        function menu(){
+            m = document.getElementById("menu");
+            ma = document.getElementById("main")
+            if(m.style.display == "none"){
+                m.style.display = "block";
+                ma.style.opacity = "0.2";
+            }else{
+                ma.style.opacity = "1"
+                m.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
