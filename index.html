@@ -5,8 +5,263 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
 </head>
-<body>
-    
+<body><div class="light" id="light" onClick="mobile()"></div>
+    <header class="headerb containerb">
+        <div class="header__logo">
+            <img src="img/logo.png" alt="Logo do site Cine Acess">
+        </div>
+        <div class="header__menu">
+            
+            <div>
+                <img src="img/play.svg" alt="">                
+            </div>
+            <div id="audio">
+                Player de Audiodescriçao
+            </div>
+            <div class="displaym">
+                
+                <div id="mobile" onClick="mobile()">
+                    <img src="img/menu.svg" alt="Menu mobile">
+                    <div class="dropdownb" id="drop">
+                        <div class="top">
+                            <ul>
+                                <li><a href="#">- Home</a></li>
+                                <li><a href="#">- Acessibilidade</a></li>
+                                <li><a href="#"><span>- Programaçao</span></a></li>
+                                <li><a href="#">- Localizaçao</a></li>
+                                
+                                
+                            </ul>
+
+                        </div>
+                        <div class="bottom">
+                            <ul>
+                                <li><a href="#">Entre</a></li>
+                                <li><a href="#">Cadastre-se</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="desktop">
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Acessibilidade</a></li>
+                        <li><a href="#"><span>Programaçao</span></a></li>
+                        <li><a href="#">Localizaçao</a></li>
+                        
+                        
+                    </ul>
+                    <ul  class="ul-sm" style="float: right;">
+                        <li><a href="#">Entre</a></li>
+                        <li><a href="#">Cadastre-se</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <main class="mainb containerb">
+        <div class="slideshow">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="slideshow__slide1">
+                        <div>
+                            <img src="img/logo.png" alt="Logo do site Cine Acess">
+                        </div>
+                        <div class="slideshow__text">
+                            <span class="text__md">
+                                Proporcionando cinema para cegos e mudos.
+                            </span>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="slideshow__slide1">
+                        <div>
+                            <img src="img/logo.png" alt="Logo do site Cine Acess">
+                        </div>
+                        <div class="slideshow__text">
+                            <span class="text__md">
+                                Proporcionando cinema para cegos e mudos.
+                            </span>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="slideshow__slide1">
+                        <div>
+                            <img src="img/logo.png" alt="Logo do site Cine Acess">
+                        </div>
+                        <div class="slideshow__text">
+                            <span class="text__md">
+                                Proporcionando cinema para cegos e mudos.
+                            </span>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            
+
+        </div>
+        <section class="sectionb">
+            <h1>Destaques em cartaz</h1>
+            <div class="sectionb__articles">
+                <article>
+                    <div class="articles__img">
+                        <img src="img/sonic.jpg" alt="Imagem do filme do sonic">
+                    </div>
+                    <div class="articles__text">
+                        <div class="articles__tittle">
+                            Sonic   O filme
+                        </div>
+                        <div>
+                            <div>
+                                12:30 <span>|</span> 1:30 <span>|</span> 3:30 <span>|</span> 5:25
+                            </div>
+                            <div>
+                                Classificaçao:12
+                            </div>
+                            <div class="articles__desc">
+                                Audiodescriçao | ClosedCaption
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article>
+                    <div class="articles__img">
+                        <img src="img/sonic.jpg" alt="Imagem do filme do sonic">
+                    </div>
+                    <div class="articles__text">
+                        <div class="articles__tittle">
+                            Sonic  O filme
+                        </div>
+                        <div>
+                            <div>
+                                12:30 <span>|</span> 1:30 <span>|</span> 3:30 <span>|</span> 5:25
+                            </div>
+                            <div>
+                                Classificaçao:12
+                            </div>
+                            <div class="articles__desc">
+                                Audiodescriçao | ClosedCaption
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article>
+                    <div class="articles__img">
+                        <img src="img/sonic.jpg" alt="Imagem do filme do sonic">
+                    </div>
+                    <div class="articles__text">
+                        <div class="articles__tittle">
+                            Sonic O filme
+                        </div>
+                        <div>
+                            <div>
+                                12:30 <span>|</span> 1:30 <span>|</span> 3:30 <span>|</span> 5:25
+                            </div>
+                            <div>
+                                Classificaçao:12
+                            </div>
+                            <div class="articles__desc">
+                                Audiodescriçao | ClosedCaption
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <div class="sectionb__button">
+                    <button>
+                        Veja mais
+                    </button>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+    <section class="containerb section2b">
+        <div class="section2b__div-md">
+            <h2>Selecione o seu <br/> cinema</h2>
+            <p>Encontre a unidade mais proxima de você</p>
+            <p><img src="img/down-arrow.svg" alt="Seta pra baixo"></p>
+        </div>
+        <div class="section2b__div-sm">
+            <h3>Adapte a <bold>acessibilidade</bold> do site</h3>
+        </div>
+        
+    </section>
+    <footer>
+        <div class="containerb footer">
+            <div class="footer__left">
+                <h4>Pagina home</h4>
+                <div class="footer__list">
+                    <div>
+                        <ul>
+                            <li>Acessibilidade</li>
+                            <li>Home</li>
+                            <li>Programação</li>
+                            <li>Localizaçao</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>Sobre</li>
+                            <li>Central de atendimento</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__right">
+                <img src="img/logo.png"  id="logof" alt="">
+                <div class="social">
+                    <img src="img/facebook.png" alt="">
+                    <img src="img/instagram.png" alt="">
+                    <img src="img/twitter.png" alt="">
+                </div>
+            </div>
+        </div>        
+    </footer>
+    <script>
+
+
+            function mobile(){
+                let el = document.getElementById("drop");
+               
+                 if(el.style.display == "none"){
+                     el.style.display = "block";
+                    light.style.display ="block";
+                     }else{
+                    el.style.display ="none";
+                    light.style.display ="none";
+                 }
+               
+                
+                
+            }
+
+
+
+    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 </html>
