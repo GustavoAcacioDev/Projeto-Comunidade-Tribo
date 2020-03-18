@@ -13,7 +13,7 @@ body{
     background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(188,188,188,1) 81%, rgba(0,0,0,1) 100%);
     background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(188,188,188,1) 81%, rgba(0,0,0,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000', GradientType=0 );
-    height: 800px;
+   
 
 }
 
@@ -264,11 +264,12 @@ select, .select{
     color: white;
 }
 
-.rodape {
-    background: rgb(29,29,29);
-    background: linear-gradient(rgba(29,29,29,1) 0%, rgba(0,0,0,1) 100%);
-    background-repeat: no-repeat;
-    display: flex;
+.rodape{
+    width: 100%;
+}
+
+.rodape .container{
+    width: 94%;
 }
 
 .padding {
@@ -288,7 +289,7 @@ select, .select{
 .imagens {
     width: 15%;
     height: 70px;
-    background-color: white;
+
 }
 
 .icones {
@@ -359,8 +360,12 @@ h2.ocultar {
         text-align: center;
     }
 }
-/* Media Query Responsividade 1100px */
+/* Media Query Responsividade 1100px  Cadastro*/
 @media(min-width: 1200px){
+    .campo label{
+        font-size: 1.5em;
+    }
+    
     footer .container h3{
         font-size: 1.7em;
     }
@@ -368,23 +373,39 @@ h2.ocultar {
     .listas a{
         font-size: 1.6em;
     }
+    .listas{
+        display: flex;
+        justify-content: space-around;
+    }
+    footer h3{
+        margin-left: 5.5em;
+    }
 
-    .listas .imagens{
+    .imagens .img{
+        width: 80%;
+        height: 200%;
+        background-color: white;
+    }
+
+    .imagens{
         display: flex;
     }
 
-    .listas .imagens img{
-        width: 100%;
-    }
-
     .icones{
-        width: 100px;
-        padding-left: 1 em;
-        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 168px;
+        padding-left: 1em;
+        height: 148px;
     }
 
     .icones img{
         width: 100%;
         height: 100%;
     }
+
+
+
+
 }
