@@ -7,24 +7,57 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <div class="container cabecalho">
-            <img src="imagens/logo.png" alt="Logo do CineAccess" class="logo">
-            <div class="menu-icons">
-                <img src="imagens/play.svg" alt="">
-                <img src="imagens/menu.svg" alt="" onclick="menu()" class="bar">
+    <div class="light" id="light" onClick="mobile()"></div>
+    <header class="headerb containerb">
+        <div class="header__logo">
+            <img src="imagens/logo.png" alt="Logo do site Cine Acess">
+        </div>
+        <div class="header__menu">
+            
+            <div>
+                <img src="imagens/play.svg" alt="">                
             </div>
-            <div id="menu">
-                <ul>
-                    <li><a href="#"><span>-</span> Home</a></li>
-                    <li><a href="#"><span>-</span> Acessibilidade</a></li>
-                    <li><a href="#"><span>-</span> Programação</a></li>
-                    <li><a href="#"><span>-</span> Localização</a></li>
-                </ul>
-                <ul class="white">
-                    <li><a href="#">Entre</a></li>
-                    <li><a href="#">Cadastre-se</a></li>
-                </ul>
+            <div id="audio">
+                Player de Audiodescriçao
+            </div>
+            <div class="displaym">
+                
+                <div id="mobile" onClick="mobile()">
+                    <img src="imagens/menu.svg" alt="Menu mobile">
+                    <div class="dropdownb" id="drop">
+                        <div class="top">
+                            <ul>
+                                <li><a href="index.html">- Home</a></li>
+                                <li><a href="#">- Acessibilidade</a></li>
+                                <li><a href="programacao.html"><span>- Programaçao</span></a></li>
+                                <li><a href="#">- Localizaçao</a></li>
+                                
+                                
+                            </ul>
+
+                        </div>
+                        <div class="bottom">
+                            <ul>
+                                <li><a href="login.html">Entre</a></li>
+                                <li><a href="cadastro.html">Cadastre-se</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="desktop">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="#">Acessibilidade</a></li>
+                        <li><a href="programacao.html"><span>Programaçao</span></a></li>
+                        <li><a href="#">Localizaçao</a></li>
+                        
+                        
+                    </ul>
+                    <ul  class="ul-sm" style="float: right;">
+                        <li><a href="login.html">Entre</a></li>
+                        <li><a href="cadastro.html">Cadastre-se</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </header>
@@ -140,31 +173,36 @@
                 <h2 class="preto">Veja outros</h2>
         </section>
     </main>
-    <footer class="h3 rodape">
-        <div class="container padding">
-            <h3>Página Home</h3>
-            <div class="listas">
-                <ul>
-                    <li><a href="#">. Acessibilidade</a></li>
-                    <li><a href="#">. Home</a></li>
-                    <li><a href="index.html">. Programação</a></li>
-                    <li><a href="#">. Localização</a></li>
-                </ul>
-                <ul class="padding-left">
-                    <li><a href="#">. Sobre</a></li>
-                    <li><a href="#">. Central de Atendimento</a></li>
-                </ul>
-                <div class="imagens">
-                    <img src="imagens/logo.png" alt="Logo do CineAcess.">
-                    <div class="icones">
-                        <img src="imagens/instagram.png" alt="Logo do Instagram." class="insta">
-                        <img src="imagens/facebook.png" alt="Logo do Facebook." class="face">
-                        <img src="imagens/twitter.png" alt="Logo do Twitter." class="tt">
+    <footer>
+        <div class="containerb footer">
+            <div class="footer__left">
+                <h4>Pagina home</h4>
+                <div class="footer__list">
+                    <div>
+                        <ul>
+                            <li>Acessibilidade</li>
+                            <li>Home</li>
+                            <li>Programação</li>
+                            <li>Localizaçao</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>Sobre</li>
+                            <li>Central de atendimento</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <p class="copyright">©COPYRIGHT - 2020</p>
-        </div>
+            <div class="footer__right">
+                <img src="imagens/logo.png"  id="logof" alt="">
+                <div class="social">
+                    <img src="imagens/facebook.png" alt="">
+                    <img src="imagens/instagram.png" alt="">
+                    <img src="imagens/twitter.png" alt="">
+                </div>
+            </div>
+        </div>        
     </footer>
     <script>
         function menu(){
