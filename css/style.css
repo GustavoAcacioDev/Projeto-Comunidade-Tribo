@@ -2,3 +2,132 @@
     padding: 0;
     margin: 0;
 }
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: rgb(255,255,255);
+    background: linear-gradient(rgba(255,255,255,1) 0%, rgba(159,159,159,1) 27%, rgba(191,191,191,1) 78%, rgba(0,0,0,1) 100%);
+    background-repeat: no-repeat;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+img{
+    max-width: 100%;
+}
+/* INÍCIO DO HEADER */
+
+
+
+
+
+/* FIM DO HEADER */
+
+/* INÍCIO CONTEÚDO PRINCIPAL */
+
+
+.acessibilidade{
+    width: 100%;
+}
+.titulo{
+    width: 100%;
+    
+}
+.titulo h1{
+    display: flex;
+    width: 100%;
+    margin-left: 12px;
+    font-size: 55px;
+    justify-content: center;
+    padding-top: 75px;
+    font-weight: 100;
+
+
+}
+
+/* INÍCIO CONFIGURAÇÃO DOS BNT */
+.buttons{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.botao1{
+    margin-top: 40px;
+}
+.btn-visual{
+    width: 100%;
+    font-size: 30px;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    background: none;
+    border-radius: 10px;
+    text-decoration: underline;
+
+}
+.btn-visual:hover{
+    color: rgb(119, 119, 119);
+
+}
+
+.botao2{
+    margin-top: 40px;
+}
+
+.btn-auditivo{
+    font-size: 30px;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    background: none;
+    border-radius: 10px;
+    text-decoration: underline;
+}
+.btn-auditivo:hover{
+    color: rgb(119, 119, 119);
+}
+.botao3{
+    margin-top: 40px;
+}
+.btn-nenhuma{
+    font-size: 30px;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    background: none;
+    border-radius: 10px;
+    text-decoration: underline;
+
+}
+.btn-nenhuma:hover{
+    color: rgb(119, 119, 119);
+
+}
+
+/* FIM CONFIGURAÇÃO DOS BNT */
+
+.filmadora{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.filmadora img{
+    width: 175px;
+    padding-top: 75px;
+}
+
+/* FIM CONTEÚDO PRINCIPAL */
+
+/* INÍCIO DO FOOTER */
+
+
+
+
+/* FIM DO FOOTER */
