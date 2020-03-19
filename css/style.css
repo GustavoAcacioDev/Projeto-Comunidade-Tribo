@@ -13,7 +13,6 @@ body{
     background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(188,188,188,1) 81%, rgba(0,0,0,1) 100%);
     background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(188,188,188,1) 81%, rgba(0,0,0,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000', GradientType=0 );
-   
 
 }
 
@@ -56,6 +55,7 @@ body {
 
 #menu li {
     list-style-type: none;
+    display: flex;
 }
 
 #menu a {
@@ -63,11 +63,8 @@ body {
 }
 
 #menu {
-    width: 50%;
+    width: 0%;
     height: 221px;
-    background-color: #757575;
-    position: absolute;
-    top: 74px;
     right: 0;
     display: none;
     z-index: 99;
@@ -82,12 +79,14 @@ body {
     color: white;
 }
 
-#menu ul.white {
+#menu ul .white {
     margin-top: 35px;
+    display: flex;
 }
 
 #menu ul {
     margin-top: 10px;
+    display: flex;
 }
 
 main .container{
@@ -351,6 +350,10 @@ h2.ocultar {
         padding-left: 65px;
     }
 
+    #menu{
+        display: flex;
+    }
+
     .listas .imagens {
         margin-left: 150px;
         margin-top: -30px;
@@ -405,7 +408,133 @@ h2.ocultar {
         height: 100%;
     }
 
+}
+
+/* Inicio Pagina Login - Gustavo Acacio */
+
+header .fa-bars{
+    color: black;
+    font-size: 3em;
+    display: block;
+    margin-top: .2em;
+}
+
+.main-login{
+    width: 100%;    
+}
+
+.container-login{
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+}
+
+.container-login p, h1{
+    text-align: center;
+    margin-top: 1.5em;
+}
 
 
+.campo-login{
+    width: 85%;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+}
 
+.campo-login input{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container-login p:nth-child(3n){
+    font-size: .7em;
+}
+
+.container-login a{
+    color: blue;
+}
+
+.entrar{
+    margin-top: 2em;
+    display: flex;
+    width: 100%;
+}
+
+.google{
+    width: 50%;
+    height: 25px;
+
+    display: flex;
+    font-size: .7em;
+}
+
+.google img{
+    height: 35px;
+}
+
+.facebook{
+    width: 50%;
+    height: 25px;
+
+    display: flex;
+    font-size: .7em;
+}
+
+.facebook img{
+    height: 35px;
+}
+/* Media Query 801px */
+@media(min-width:800px){
+    .entrar{
+        height: 40px;
+        width: 65%;
+        margin: 2em auto;
+    }
+    header .fa-bars{
+        color: black;
+        font-size: 3em;
+        display: none;
+        margin-top: .2em;
+    }
+    #menu{
+        display: block;
+        width: 40%;
+        height: 72px;
+    }
+
+
+}
+
+/* Media Query 1200px */
+@media(min-width: 1200px){
+    .campo-login input{
+        width: 100%;
+        height: 3em;
+        margin: 0 auto;
+    }
+
+    form{
+        font-size: 2em;
+    }
+
+    .entrar{
+        background-color: red;
+        height: 40px;
+        width: 45%;
+        margin: 2em auto;
+    }
+
+    .google img{
+        height: 50px;
+
+    }
+    
+    .facebook img{
+        height: 50px;
+
+    }
 }

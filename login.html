@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/d755ec8ea5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="container cabecalho">
+            <a href="index.html">
+                <img src="imagens/logo.png" alt="Logo do CineAccess" class="logo">
+            </a>
+
+            <div class="menu-icons">
+                    <img src="imagens/play.svg" alt="Simbolo de Play">
+                    <a href="#" onclick="botaoMenu()">
+                        <i class="fas fa-bars"></i>
+                    </a>
+            <div id="menu">
+                <ul>
+                    <li><a href="index.html"> Home</a></li>
+                    <li><a href="#"> Acessibilidade</a></li>
+                    <li><a href="programacao.html"> Programação</a></li>
+                    <li><a href="#"> Localização</a></li>
+                </ul>
+                <ul class="white">
+                    <li><a href="login.html">Entre</a></li>
+                    <li><a href="cadastro.html">Cadastre-se</a></li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </header>
+    
+    <main class="main-login">
+        <div class="container-login">
+            <h1>Entrar</h1>
+            <form action="" method="GET">
+                <p>Digite seu email</p>
+                <div class="campo-login">
+                    <label for="email"></label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <p>Digite sua senha</p>
+                <div class="campo-login">
+                    <label for="senha"></label>
+                    <input type="senha" name="senha" id="senha">
+                </div>
+            </form>
+            
+            <p>Não possui uma conta? Clique aqui para se <a>cadastrar</a></p>
+
+            <div class="entrar">
+                <div class="google">
+                    <img src="imagens/Imagem 3.png" alt="Logo do Google">
+                    <p>Entre com a sua conta Google</p>
+                </div>
+                <div class="facebook">
+                    <img src="imagens/facebook.png" alt="Logo do Facebook">
+                    <p>Entre com a sua conta do Facebook</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="h3 rodape">
+        <div class="container padding">
+            <h3>Página Home</h3>
+            <div class="listas">
+                <ul>
+                    <li><a href="#">. Acessibilidade</a></li>
+                    <li><a href="#">. Home</a></li>
+                    <li><a href="index.html">. Programação</a></li>
+                    <li><a href="#">. Localização</a></li>
+                </ul>
+                <ul class="padding-left">
+                    <li><a href="#">. Sobre</a></li>
+                    <li><a href="#">. Central de Atendimento</a></li>
+                </ul>
+                <div class="imagens">
+                    <img class="img" src="imagens/logo.png" alt="Logo do CineAcess.">
+                    <div class="icones">
+                        <img src="imagens/instagram.png" alt="Logo do Instagram." class="insta">
+                        <img src="imagens/facebook.png" alt="Logo do Facebook." class="face">
+                        <img src="imagens/twitter.png" alt="Logo do Twitter." class="tt">
+                    </div>
+                </div>
+            </div>
+            <p class="copyright">©COPYRIGHT - Todos os direitos reservados á SENAI-2020</p>
+        </div>
+    </footer>
+    <script>
+        function botaoMenu(){
+            var m = document.getElementById("menu");
+            if(m.style.display == "block"){
+                m.style.display = "none";
+            }
+            else{
+                m.style.display = "block"
+            }
+        }
+    </script>
+</body>
+</html>
