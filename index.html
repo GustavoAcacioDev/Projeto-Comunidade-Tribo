@@ -28,9 +28,9 @@
                     <div class="dropdownb" id="drop">
                         <div class="top">
                             <ul>
-                                <li><a href="index.html">- Home</a></li>
+                                <li><a href="index.html" title="Acessar a página inical">- Home</a></li>
                                 <li><a href="#">- Acessibilidade</a></li>
-                                <li><a href="programacao.html"><span>- Programaçao</span></a></li>
+                                <li><a href="programacao.html" title="Acessar a página de programação"><span>- Programaçao</span></a></li>
                                 <li><a href="#">- Localizaçao</a></li>
                                 
                                 
@@ -39,24 +39,24 @@
                         </div>
                         <div class="bottom">
                             <ul>
-                                <li><a href="login.html">Entre</a></li>
-                                <li><a href="cadastro.html">Cadastre-se</a></li>
+                                <li><a href="login.html" title="Acessar página de login">Entre</a></li>
+                                <li><a href="cadastro.html" title="Acessar página de cadastro">Cadastre-se</a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
                 <div id="desktop">
                     <ul>
-                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="index.html" title="Acessar página inicial">Inicio</a></li>
                         <li><a href="#">Acessibilidade</a></li>
-                        <li><a href="programacao.html"><span>Programaçao</span></a></li>
+                        <li><a href="programacao.html" title="Acessar página de Programação"><span>Programaçao</span></a></li>
                         <li><a href="#">Localizaçao</a></li>
                         
                         
                     </ul>
                     <ul  class="ul-sm" style="float: right;">
-                        <li><a href="login.html">Entre</a></li>
-                        <li><a href="cadastro.html">Cadastre-se</a></li>
+                        <li><a href="login.html" title="Acessar página de login">Entre</a></li>
+                        <li><a href="cadastro.html" title="Acessar página de cadastro">Cadastre-se</a></li>
                     </ul>
                 </div>
             </div>
@@ -208,58 +208,50 @@
         </div>
         
     </section>
-    <footer>
-        <div class="containerb footer">
-            <div class="footer__left">
-                <h4>Pagina home</h4>
-                <div class="footer__list">
-                    <div>
-                        <ul>
-                            <li>Acessibilidade</li>
-                            <li>Home</li>
-                            <li>Programação</li>
-                            <li>Localizaçao</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <ul>
-                            <li>Sobre</li>
-                            <li>Central de atendimento</li>
-                        </ul>
+        <!-- INÍCIO FOOTER -->
+        <footer>
+            <div class="containerb footer">
+                <div class="footer__left">
+                    <h4>Pagina home</h4>
+                    <div class="footer__list">
+                        <div>
+                            <ul>
+                                <li>Acessibilidade</li>
+                                <li>Home</li>
+                                <li>Programação</li>
+                                <li>Localizaçao</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul>
+                                <li>Sobre</li>
+                                <li>Central de atendimento</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="footer__right">
-                <img src="imagens/logo.png"  id="logof" alt="">
-                <div class="social">
-                    <img src="imagens/facebook.png" alt="">
-                    <img src="imagens/instagram.png" alt="">
-                    <img src="imagens/twitter.png" alt="">
+                <div class="footer__right">
+                    <img src="imagens/logo.png"  id="logof" alt="Logo Cineacess">
+                    <div class="social">
+                        <img src="imagens/facebook.png" alt="logo facebook">
+                        <img src="imagens/instagram.png" alt="logo instagram">
+                        <img src="imagens/twitter.png" alt="Logo twitter">
+                    </div>
                 </div>
-            </div>
-        </div>        
-    </footer>
-    <script>
-
-
-            function mobile(){
-                let el = document.getElementById("drop");
-               
-                 if(el.style.display == "none"){
-                     el.style.display = "block";
-                    light.style.display ="block";
-                     }else{
-                    el.style.display ="none";
-                    light.style.display ="none";
-                 }
-               
-                
-                
+            </div>        
+        </footer>
+        <!-- Final FOOTER -->
+        <script>
+            function botaoMenu(){
+                var m = document.getElementById("menu");
+                if(m.style.display == "block"){
+                    m.style.display = "none";
+                }
+                else{
+                    m.style.display = "block"
+                }
             }
-
-
-
-    </script>
+        </script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
