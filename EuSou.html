@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+     <!-- INÍCIO HEADER -->
+    
+        <div class="light" id="light" onClick="mobile()"></div>
+    <header class="headerb containerb">
+        <div class="header__logo">
+            <img src="imagens/logo.png" alt="Logo do site Cine Acess">
+        </div>
+        <div class="header__menu">
+            
+            <div>
+                <img src="imagens/play.svg" alt="">                
+            </div>
+            <div id="audio">
+                Player de Audiodescriçao
+            </div>
+            <div class="displaym">
+                
+                <div id="mobile" onClick="mobile()">
+                    <img src="imagens/menu.svg" alt="Menu mobile">
+                    <div class="dropdownb" id="drop">
+                        <div class="top">
+                            <ul>
+                                <li><a href="index.html">- Home</a></li>
+                                <li><a href="#">- Acessibilidade</a></li>
+                                <li><a href="programacao.html"><span>- Programaçao</span></a></li>
+                                <li><a href="#">- Localizaçao</a></li>
+                                
+                                
+                            </ul>
+
+                        </div>
+                        <div class="bottom">
+                            <ul>
+                                <li><a href="login.html">Entre</a></li>
+                                <li><a href="cadastro.html">Cadastre-se</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="desktop">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="#">Acessibilidade</a></li>
+                        <li><a href="programacao.html"><span>Programaçao</span></a></li>
+                        <li><a href="#">Localizaçao</a></li>
+                        
+                        
+                    </ul>
+                    <ul  class="ul-sm" style="float: right;">
+                        <li><a href="login.html">Entre</a></li>
+                        <li><a href="cadastro.html">Cadastre-se</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+
+
+
+    <!-- FIM HEADER -->
+
+
+
+    <!-- INÍCIO CONTEÚDO PRINCIPAL EU SOU.. -->
+
+    <div class="acessibilidade">
+
+
+        <div class="titulo">
+            <h1>
+                EU SOU...
+            </h1>
+        </div>
+
+
+        <div class="buttons">
+
+            <div class="botao1">
+                <button class="btn-visual"> Deficiente visual <i class="fas fa-eye"></i> </button>
+            </div>
+
+
+            <div class="botao2">
+                <button class="btn-auditivo"> Deficiente auditivo </a><i class="fas fa-assistive-listening-systems"></i>
+                </button>
+            </div>
+
+
+            <div class="botao3">
+               <button class="btn-nenhuma"> Nenhuma das opções <i class="fas fa-shield-alt"></i> </button>
+            </div>
+
+            <div class="filmadora">
+                <img src="imagens/filmadora retro.png" alt="">
+        
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- FIM CONTEÚDO PRINCIPAL EU SOU.. -->
+
+</body>
+
+<!-- INÍCIO FOOTER -->
+<footer>
+    <div class="containerb footer">
+        <div class="footer__left">
+            <h4>Pagina home</h4>
+            <div class="footer__list">
+                <div>
+                    <ul>
+                        <li>Acessibilidade</li>
+                        <li>Home</li>
+                        <li>Programação</li>
+                        <li>Localizaçao</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>Sobre</li>
+                        <li>Central de atendimento</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer__right">
+            <img src="imagens/logo.png"  id="logof" alt="">
+            <div class="social">
+                <img src="imagens/facebook.png" alt="">
+                <img src="imagens/instagram.png" alt="">
+                <img src="imagens/twitter.png" alt="">
+            </div>
+        </div>
+    </div>        
+</footer>
+<script>
+    function menu(){
+        m = document.getElementById("menu");
+        ma = document.getElementById("main")
+        if(m.style.display == "none"){
+            m.style.display = "block";
+            ma.style.opacity = "0.2";
+        }else{
+            ma.style.opacity = "1"
+            m.style.display = "none";
+        }
+    }
+</script>
+<!-- INÍCIO FOOTER -->
+
+</html>
